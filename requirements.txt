@@ -1,0 +1,61 @@
+Admin (Functional):
+	An administrator needs to be able to see the list of member (Must)
+	Add new members (Must)
+	Edit existing members (Should)
+	Delete members from the system (Should)
+	Check the status of currently loaned items per member (Must)
+	Import members from a CSV file (Should)
+	Filter the list of members (Could)
+	
+	An administrator needs to be able to see the catalog (List of books) (Must)
+	Add new books to the catalog (Must)
+	Edit existing books from the catalog (Should)
+	Delete books from the catalog (Should)
+	Search book in the catalog (Should)
+	Import books from a JSON file (Should)
+	Filter the catalog (Could)
+	
+	An administrator needs to be able to see the list of book items in the system (Must)
+	Add new book items to the system (Must)
+	Edit existing book items from the system (Should)
+	Delete book items from the system (Should)
+	Search book item in the system (Should)
+	Check book item availability (Should)
+	Lend a book item to a member (Should)
+	Filter the book items (Could)
+	
+	Make backup of the system in JSON format (Must)
+	Restore the system from a backup (Should)
+	
+Members (Functional):
+	Check the catalog (Must)
+	Search for a book in the catalog (Should)
+	
+	A member needs to be able to see the list of book items in the system (Must)
+	Search book item in the system (Should)
+	Loan available book item (Must)
+	Return loaned item(s) (Should)
+	
+System (Functional):
+	Main interface in console (Should - Functional)
+	Login (Must - Functional)
+	Hardcoded admin credentials (Should - Functional)
+	Filters must accept partial parameters (Should) 
+
+	On start up the system will check all required data files (Must)
+	When required data file is available, then correctly load it into the system (Should)
+	When required data file is not available, then create new data file (Should)
+	
+	Initialy the system must have threee copies of a book item of each book (Must)
+	A member can loan a book for a maximum of 30 days (Should)
+	A member can loan a maximum of three books simultaneously (Should)
+	The Book search must accept book title or author as search key (Must)
+	
+	Back-up file name must contain date and serial number to distinguish multiple back-ups (Must)
+	
+	All data must be saved after each transaction in the system (Must)
+	Prevent duplicate entities that are created in the system (Must)
+	A member can only loan one book item of its multiple copies. (Must)
+	A member username will only contain lowercase formatting. (Must)
+	The username and password are defined by the library admin (Must)
+	Navigation throughout the system will be chosen by single digits. (Must)
